@@ -18,3 +18,23 @@ func TestEx4(t *testing.T) {
 		t.Fatalf("Expected 2, got %d", timesToTheLeft)
 	}
 }
+
+func TestLanternFishes(t *testing.T) {
+	fishes := lanthernFishes(18)
+	if len(fishes) != 26 {
+		t.Fatalf("Expected 26 fishes after 18 days, got %d.", len(fishes))
+	}
+	expectedFishAges := []int{6, 0, 6, 4, 5, 6, 0, 1, 1, 2, 6, 0, 1, 1, 1, 2, 2, 3, 3, 4, 6, 7, 8, 8, 8, 8}
+	for i := 0; i < len(expectedFishAges); i++ {
+		if fishes[i] != expectedFishAges[i] {
+			t.Fatalf("Expected fish numer %d to be %d days old, got %d days of age.", i, expectedFishAges[i], fishes[i])
+		}
+	}
+
+}
+
+func BenchmarkLanternFishes(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		lanthernFishes(18)
+	}
+}
