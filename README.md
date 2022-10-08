@@ -17,6 +17,17 @@ PASS
 ok      github.com/Gabri432/algorithms-unimi/problem_solving    2.166s
 ```
 
+## Project structure
+- (main)
+  - license
+  - README.md
+  - go.mod
+  - problem_solving
+    - ex3.go
+    - ex4.go
+    - lantern_fishes.go
+    - problem_solving_test.go
+
 ## Links
 [Problem Solving Exercises](https://lonati.di.unimi.it/algolab-go/22-23/materiale/settimana01/02-problemSolvingEOsservazioniDichiarative.pdf)
 [How to make benchmark testing in go](https://dev.to/mcaci/introduction-to-benchmarks-in-go-3cii)
