@@ -22,7 +22,7 @@ ok      github.com/Gabri432/algorithms-unimi/problem_solving    2.166s
   - license
   - README.md
   - go.mod
-  - problem_solving
+  - problem_solving (folder)
     - ex3.go
     - ex4.go
     - lantern_fishes.go
