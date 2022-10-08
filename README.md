@@ -1,4 +1,6 @@
 # Algorithms-unimi
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/Gabri432/algorithms-unimi)
+
 A repository containing some 'Algorithms and Data Structures' course exercises of professor Violetta Lonati, Unimi.
 
 ## How to run the tests
