@@ -14,9 +14,10 @@ goos: windows
 goarch: amd64
 pkg: github.com/Gabri432/algorithms-unimi/problem_solving
 cpu: AMD Athlon Silver 3050U with Radeon Graphics
-BenchmarkLanternFishes-2         1837238               641.9 ns/op
+BenchmarkLanternFishes18-2       1876839               634.0 ns/op
+BenchmarkLanternFishes80-2          7695            137720 ns/op
 PASS
-ok      github.com/Gabri432/algorithms-unimi/problem_solving    2.166s
+ok      github.com/Gabri432/algorithms-unimi/problem_solving    3.895s
 ```
 
 ## Project structure

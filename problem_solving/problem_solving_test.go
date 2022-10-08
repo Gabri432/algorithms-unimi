@@ -30,11 +30,21 @@ func TestLanternFishes(t *testing.T) {
 			t.Fatalf("Expected fish numer %d to be %d days old, got %d days of age.", i, expectedFishAges[i], fishes[i])
 		}
 	}
+	fishes = lanthernFishes(80)
+	if len(fishes) != 5934 {
+		t.Fatalf("Expecte 5934 fishes, got %d.", len(fishes))
+	}
 
 }
 
-func BenchmarkLanternFishes(b *testing.B) {
+func BenchmarkLanternFishes18(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		lanthernFishes(18)
+	}
+}
+
+func BenchmarkLanternFishes80(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		lanthernFishes(80)
 	}
 }
