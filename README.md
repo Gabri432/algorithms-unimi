@@ -34,6 +34,7 @@ ok      github.com/Gabri432/algorithms-unimi/problem_solving    3.895s
     - transparent_origami.go
   - data_structures (folder)
     - linked_list.go
+    - queue.go
 
 ## Links
 [Problem Solving Exercises](https://lonati.di.unimi.it/algolab-go/22-23/materiale/settimana01/02-problemSolvingEOsservazioniDichiarative.pdf)
