@@ -7,6 +7,7 @@ import (
 	"strings"
 )
 
+// Checks wheter there is a wrong parenthesis enclosing.
 func parenthesisChecker(textLine string) {
 	textLine = removeClosingParenthesis(textLine)
 	for i := 1; i-1 < len(textLine); i++ {
@@ -31,6 +32,7 @@ func removeClosingParenthesis(textLine string) string {
 	return removeClosingParenthesis(newTextLine)
 }
 
+// Verifies if p is an opening parenthesis.
 func isOpeningParenthesis(p string) bool {
 	switch p {
 	case "{", "<", "[", "(":
@@ -40,6 +42,7 @@ func isOpeningParenthesis(p string) bool {
 	}
 }
 
+// Verifies if p is a closing parenthesis.
 func isClosingParenthesis(p string) bool {
 	switch p {
 	case "}", ">", "]", ")":
@@ -49,6 +52,7 @@ func isClosingParenthesis(p string) bool {
 	}
 }
 
+// Verifies if p1 and p2 are respectively an opening and closing parenthesis.
 func areClosing(p1, p2 string) bool {
 	switch {
 	case p1 == "[" && p2 == "]", p1 == "{" && p2 == "}", p1 == "<" && p2 == ">", p1 == "(" && p2 == ")": // cases [], <>, (), []
