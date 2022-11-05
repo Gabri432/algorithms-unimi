@@ -15,6 +15,8 @@ A repository containing some 'Algorithms and Data Structures' course exercises o
     - first_week.go
   - second_week (folder)
     - transparent_origami.go
+  - fifth_week (folder)
+    - fifth_week.go
   - data_structures (folder)
     - linked_list.go
     - queue.go
