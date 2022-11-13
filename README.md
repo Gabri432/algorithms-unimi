@@ -24,6 +24,6 @@ A repository containing some 'Algorithms and Data Structures' course exercises o
     - tree.go
 
 ## Links
-[Problem Solving Exercises](https://lonati.di.unimi.it/algolab-go/22-23/materiale/settimana01/02-problemSolvingEOsservazioniDichiarative.pdf)
+[Problem Solving Exercises](https://lonati.di.unimi.it/algolab-go/22-23/?page=materiali)
 
 [How to make benchmark testing in go](https://dev.to/mcaci/introduction-to-benchmarks-in-go-3cii)
