@@ -72,14 +72,30 @@ func postorder(node *treeNode) {
 	fmt.Print(node.item)
 }
 
-func stampaAlberoASommario(node *treeNode, spaces int) {
+func printTreeSummary(node *treeNode, spaces int) {
 	for i := 0; i < spaces; i++ {
 		fmt.Print(" ")
 	}
 	fmt.Print("*")
 	fmt.Println(node.item)
-	if node.left != nil || node.right != nil {
-		stampaAlberoASommario(node.left, spaces+1)
-		stampaAlberoASommario(node.right, spaces+1)
+	if node.left != nil {
+		printTreeSummary(node.left, spaces+1)
+		if node.right == nil {
+			for i := 0; i < spaces+1; i++ {
+				fmt.Print(" ")
+			}
+			fmt.Print("*")
+			fmt.Println()
+		}
+	}
+	if node.right != nil {
+		if node.left == nil {
+			for i := 0; i < spaces+1; i++ {
+				fmt.Print(" ")
+			}
+			fmt.Print("*")
+			fmt.Println()
+		}
+		printTreeSummary(node.right, spaces+1)
 	}
 }
