@@ -21,6 +21,7 @@ A repository containing some 'Algorithms and Data Structures' course exercises o
     - linked_list.go
     - queue.go
     - stack.go
+    - tree.go
 
 ## Links
 [Problem Solving Exercises](https://lonati.di.unimi.it/algolab-go/22-23/materiale/settimana01/02-problemSolvingEOsservazioniDichiarative.pdf)
